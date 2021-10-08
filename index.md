@@ -18,7 +18,7 @@ title: Ryoma의 개발이야기
 
 ## **사용언어**
 ```
-- C/C++, Java, Javascript, JSP, Vuejs(공부중), Python
+- C/C++, Java, Javascript, JSP, Vuejs(공부중), Python, MiPlatform, Nexacro
 ```
 
 ## **MyProject**
