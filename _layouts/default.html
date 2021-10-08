@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
+		<style type="text/css">
+			body { font-family:'맑은 고딕', Georgia, monospace; }
+		</style>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		{% seo %}
 		{% feed_meta %}
-
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
@@ -59,7 +60,6 @@
 						</li>
 					{% endfor %}
 				</ul>
-
 				<ul>
 					<li class="nav-item top-level {% if page.url == '/changelog/' %}current{% endif %}">
 						{% assign changelog = site.html_pages | where: 'url', '/changelog/' | first %}
@@ -71,8 +71,8 @@
 
 		<section class="main">
 			<div class="page-header">
-				<h2>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %}</h2>
-				<h3>{{ page.title }}</h3>
+				<h3>{% if page.category %}{{ page.category }}{% else %}{{ site.title }}{% endif %} 의 개발이야기</h3>
+				<!-- <h3>{{ page.title }}</h3> -->
 			</div>
 			<article class="content">
 				{{ content }}
